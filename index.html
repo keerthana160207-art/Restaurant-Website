@@ -1,0 +1,460 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Keerthana Restaurant</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: antiquewhite;
+        }
+
+        nav {
+            background-color: brown;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        nav h1 {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 25px;
+            font-size: 20px;
+        }
+
+        nav a:hover {
+            color: black;
+        }
+
+        .hero {
+            background-color: burlywood;
+            height: 450px;
+            color:black;
+            text-align: center;
+            padding-top: 130px;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .hero button {
+            background-color: black;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            background-color:purple;
+            color:white;
+        }
+
+        section {
+            padding: 50px 30px;
+            text-align: center;
+        }
+
+        section h2 {
+            color: brown;
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+
+        .about {
+            background-color:white;
+        }
+
+        .about p {
+            font-size: 18px;
+            line-height: 1.8;
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .menu {
+            background-color:burlywood;
+        }
+
+        .food-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .food-card{
+            background-color: azure;
+            width: 280px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px gray;
+        }
+
+        .food-card img {
+            width: 100%;
+            height: 180px;
+            object-fit:cover;
+            border-radius: 8px;
+        }
+
+        .food-card h2 {
+            color: brown;
+            margin: 12px;
+
+        }
+
+        .food-card p {
+            margin: 10px;
+            color:black;
+        }
+
+        .price{
+            color:green;
+            font-size: 20px;
+        }
+
+        .offers {
+            background-color: azure;
+        }
+
+        .offer-box {
+            background-color: burlywood;
+            color:black;
+            padding: 25px;
+            margin: 15px auto;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+
+        .offer-box h3 {
+            color:black;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        .offer-box p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        
+
+
+        .contact {
+            background-color:wheat;
+            margin-bottom:20px;
+            padding: 25px 25px;
+
+        }
+        .contact  p {
+       margin-bottom: 40px;
+}
+
+        .contact form {
+            background-color:sienna;
+            max-width: 500px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        .contact input,
+        .contact textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid gray;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .contact button {
+            background-color:black;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 17px;
+        }
+        .contact button:hover{
+            background-color:ghostwhite;
+            color:black;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: brown;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer p {
+            margin: 8px;
+        }
+
+        @media (max-width: 700px) {
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            nav h1 {
+                font-size: 30px;
+            }
+
+            .hero h2 {
+                font-size: 30px;
+            }
+
+            .hero {
+                height: 380px;
+                padding: 100px 15px;
+            }
+
+            .food-card {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+
+        <h1>Keerthana Restaurant</h1>
+
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#offers">Offers</a>
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+    <div class="hero" id="home">
+
+        <h2>Welcome to Keerthana Restaurant!</h2>
+
+        <p>Delicious Food, Happy Moments!</p>
+
+        <button onclick="location.href='#menu'">
+            Explore Our Menu
+        </button>
+
+    </div>
+
+    <section class="about" id="about">
+
+        <h2>About Our Restaurant food!</h2>
+
+        <p>
+            Welcome to Keerthana Restaurant!
+            We serve delicious and fresh food prepared
+            with love and quality ingredients.
+            Our restaurant provides a comfortable
+            atmosphere for families and friends.
+            We offer traditional South Indian dishes
+            and tasty special meals at affordable prices.
+            Visit us and enjoy wonderful food with
+            excellent service.
+        </p>
+
+    </section>
+
+    <section class="menu" id="menu">
+
+        <h2>Our Food Menu</h2>
+
+        <div class="food-container">
+
+            <div class="food-card">
+
+                <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc"
+                alt="South Indian Idli">
+
+                <h3>Idli</h3>
+
+                <p>Soft and delicious steamed idli.</p>
+
+                <p class="price">₹40 Ruppes</p>
+
+            </div>
+
+            <div class="food-card">
+
+                <img src="https://images.unsplash.com/photo-1630383249896-424e482df921"
+                alt="Masala Dosa">
+
+                <h3>Masala Dosa</h3>
+
+                <p>Crispy dosa with tasty potato masala.</p>
+
+                <p class="price">₹80</p>
+
+            </div>
+
+            <div class="food-card">
+
+                <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b"
+                alt="Veg Biryani">
+
+                <h3>Veg Biryani</h3>
+
+                <p>Delicious vegetable biryani with spices.</p>
+
+                <p class="price">₹120</p>
+
+            </div>
+
+            <div class="food-card">
+
+                <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8"
+                alt="Paneer Butter Masala">
+
+                <h3>Paneer Butter Masala</h3>
+
+                <p>Soft paneer cooked in creamy gravy.</p>
+
+                <p class="price">₹150</p>
+
+            </div>
+
+            <div class="food-card">
+
+                <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950"
+                alt="Samosa">
+
+                <h3>Samosa</h3>
+
+                <p>Crispy snack filled with potato masala.</p>
+
+                <p class="price">₹30</p>
+
+            </div>
+
+            <div class="food-card">
+
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587"
+                alt="Chocolate Cake">
+
+                <h3>Chocolate Cake</h3>
+
+                <p>Sweet and delicious chocolate cake.</p>
+
+                <p class="price">₹90</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="offers" id="offers">
+
+        <h2>Special Offers Going On!</h2>
+
+        <div class="offer-box">
+
+            <h3>Family Special Offer</h3>
+
+            <p>Get 20% OFF on family food orders above ₹500!</p>
+
+        </div>
+
+        <div class="offer-box">
+
+            <h3>Weekend Special</h3>
+
+            <p>Buy 2 Masala Dosas and Get 1 Idli FREE!</p>
+
+        </div>
+
+        <div class="offer-box">
+
+            <h3>Student Offer</h3>
+
+            <p>Enjoy 10% OFF on all food items with student ID!</p>
+
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>.....We are happy to serve you!.....hh</p>
+
+        <form>
+
+            <input type="text"
+            placeholder="Enter Your Name"
+            required>
+
+            <input type="email"
+            placeholder="Enter Your Email"
+            required>
+
+            <input type="tel"
+            placeholder="Enter Your Phone Number"
+            required>
+
+            <textarea rows="5"
+            placeholder="Enter Your Message"
+            required></textarea>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+        <p style="margin-top:25px;">
+            Address: Chennai, Tamil Nadu
+        </p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Email: keerthana@gmail.com</p>
+
+    </section>
+
+    <footer>
+
+        <h2>Keerthana Restaurant!</h2>
+
+        <p>Delicious Food, Happy Moments!</p>
+
+        <p>Follow Us: Facebook | Instagram | YouTube</p>
+
+        <p>© 2026 Keerthana Restaurant. All Rights Reserved.</p>
+
+    </footer>
+
+</body>
+</html>
